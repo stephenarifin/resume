@@ -28,6 +28,11 @@ ul {
   padding: 0px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 .jumbotron {
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), image-url("header_background_filter_cropped.png") center no-repeat;
   background-size: cover;
@@ -98,4 +103,14 @@ ul {
 
 #experience strong {
   color: $white;
+}
+
+#skills {
+  padding: 40px;
+  background-color: $light-blue;
+}
+
+#skills h2 {
+  font-size: 3.0rem;
+  color: $dark-blue;
 }
