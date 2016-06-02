@@ -14,8 +14,8 @@
         <li><a href="#overview">Overview</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#experience">Work Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -39,10 +39,10 @@
     <div class="col-sm-8">
       <p>I’m 22 years old and a recent graduate from <strong>The University of Texas at Austin</strong> with a passion for software development.
         I am currently working full-time at <strong>Microsoft</strong> on cloud integration for Office applications.
-        I have experience in large distributed back-end systems, mobile development, and web development.</p>
+        I have experience in large distributed back-end systems, mobile development, web development, and embedded systems.</p>
     </div>
   </div>
-</section>
+</section><br>
 
 <section id="education">
   <div class="container text-center">
@@ -61,27 +61,45 @@
       <img src="<%= asset_path("ut_tower.png") %>" class="img-responsive img-circle" style="width:100%" alt="Image">
     </div>
   </div>
-</section>
+</section><br>
 
 <section id="experience">
-  <div class="container text-center">
-  <h2>Experience</h2>
-  </div>
   <div class="container bg-3">
-    <div class="col-md-8">
+    <div class="col-sm-4">
       <p>Some text..</p>
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <img src="<%= asset_path('microsoft.png') %>" class="img-responsive img-circle" style="width:100%" alt="Image">
     </div>
-    <div class="col-md-4">
+    <div class="col-sm-8">
+      <h2>Software Engineer at Microsoft</h2><br>
+      <ul>
+        <li>Worked within the File I/O team <strong>integrating Office applications with OneDrive cloud storage</strong></li>
+        <li>Designed a middleware service that <strong>enabled multiple Office clients to coauthor a file </strong>hosted on third-party storage endpoints</li>
+        <li>Implemented three-way merge for documents to maintain proper version control</li>
+        <li><strong>Simulated large-scale client collaboration </strong>to gather metrics of the current coauthoring system</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container bg-3">
+    <div class="col-sm-4">
       <p>Some text..</p>
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <img src="<%= asset_path('ti.png') %>" class="img-responsive img-circle" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-8">
+      <h2>Software Engineer at Texas Instruments</h2><br>
+      <ul>
+        <li><strong>Wrote kernel driver firmware in C</strong> for host and subsystem processor communication</li>
+        <li>Implemented remote processor driver controlling motors for thermal printer</li>
+        <li><strong>Designed and implemented pin modes and signals </strong>for Beaglebone Black RS-485 Cape</li>
+        <li>Measured power consumption of AM-437x board by running Ethernet, dual-camera, and PRU stress tests</li>
+      </ul>
     </div>
   </div>
 </section>
 
 <section id="projects">
-  <div class="container-fluid bg-3 text-center">
-    <h3>Projects</h3><br>
+  <div class="container bg-3 text-center">
+    <h2>Projects</h2><br>
     <div class="row">
       <div class="col-sm-6">
         <p>Some text..</p>

@@ -24,6 +24,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+ul {
+  padding: 0px;
+}
+
 .jumbotron {
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), image-url("header_background_filter_cropped.png") center no-repeat;
   background-size: cover;
@@ -71,11 +75,27 @@ body {
   color: $blue;
 }
 
+#education .col-sm-8 {
+  padding: 24px;
+}
+
 #experience {
-  padding: 40px 15px;
-  background-color: $blue;
+  padding: 40px;
+  background-color: $pale-blue;
 }
 
 #experience h2 {
+  color: $light-blue;
+}
+
+#experience ul {
+  color: $light-blue
+}
+
+#experience .col-sm-8 {
+  padding: 24px;
+}
+
+#experience strong {
   color: $white;
 }
