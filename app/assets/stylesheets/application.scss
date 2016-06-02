@@ -12,5 +12,42 @@
  *
  */
 
+@import "partials/colors";
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  padding-top: 50px;
+}
+
+.jumbotron {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), image-url("header_background_filter_cropped.png") center no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+
+.header {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.header h1 {
+  color: $white;
+}
+
+.header p {
+  color: $white;
+}
+
+#education {
+  padding: 40px 15px;
+}
+
+#experience {
+  padding: 40px 15px;
+  background-color: $blue;
+}
+
+#experience h2 {
+  color: $white;
+}
