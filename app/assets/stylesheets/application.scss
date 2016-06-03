@@ -128,6 +128,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 8px 24px;
 }
 
+#contact {
+  padding: 40px;
+  background-color: $dark-grey;
+  color: $white;
+}
+
+#contact .row {
+  padding-left: 40px;
+}
 
 .hovereffect {
   width:100%;
