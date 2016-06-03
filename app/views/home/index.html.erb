@@ -23,8 +23,8 @@
 
 <div class="jumbotron">
   <header class="header">
-    <h1>Stephen Arifin</h1>
-    <p>Software Engineer | stephen.arifin@gmail.com</p>
+    <h1>Web. Mobile. Cloud.</h1>
+    <p class="text-center">Software Engineer | stephen.arifin@gmail.com</p>
   </header>
 </div>
 
@@ -158,7 +158,7 @@
         <img src="<%= asset_path('python.png') %>" class="img-responsive center-block img-rounded" style="width:50%" alt="Image">
         <h3><span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span></h3>
       </div>
-    </div>
+    </div><br>
     <div class="row">
       <div class="col-sm-3">
         <img src="<%= asset_path('ruby.png') %>" class="img-responsive center-block img-rounded" style="width:50%" alt="Image">
@@ -178,9 +178,87 @@
       </div>
     </div>
   </div>
+  <br>
 </section>
-<br><br>
+
+<section id="projects">
+  <div class="container bg-3 text-center">
+    <h2>Projects</h2> <br><br>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="hovereffect">
+          <img src="<%= asset_path('chapterhouse.png') %>" class="img-responsive center-block img-circle" style="width:50%" alt="Image">
+          <div class="overlay">
+            <a class="info" target="_blank" href="https://www.chapter.house/">Visit Website</a>
+            <a class="info" target="_blank" href="https://itunes.apple.com/us/app/chapter-house/id1030655685?ls=1&mt=8">Visit Appstore</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <h3>Chapter House</h3>
+        <p class="text-left">Chapter House is an <strong>online invoicing service</strong> made specifically for Greek Life.
+        Chapter House uses <strong>AngularJS</strong> to communicate with a <strong>Ruby on Rails</strong> back-end and handles all transactions through <strong>Stripe.</strong></p>
+
+        <p class="text-left">In just 6 months, Chapter House has <b>gained over 100 users and has invoiced and collected over $40,000.</b></p>
+      </div>
+      <br>
+      <div class="row">
+        <a target="_blank" href="https://itunes.apple.com/us/app/chapter-house/id1030655685?ls=1&mt=8">
+          <img src="<%= asset_path('appstore.png') %>" class="img-responsive center-block img-rounded" style="width:40%" alt="Image">
+        </a>
+      </div><br>
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="hovereffect">
+          <img src="<%= asset_path('autoturret.png') %>" class="img-responsive center-block img-rounded" style="width:75%" alt="Image">
+          <div class="overlay">
+            <a class="info" target="_blank" href="https://www.youtube.com/watch?v=gSeaKS87Cjc">Watch Video</a>
+            <a class="info" target="_blank" href="http://stephenarifin.blogspot.com/">View Blog</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h3>The Autoturret</h3>
+        <p class="text-left">The Autoturret is a toy missile launcher with <strong>face-tracking</strong> capabilities and can be controlled by an <strong>Android phone.</strong>
+        The Autoturret uses <strong>Intel's OpenCV on the Beaglebone Black</strong> to recognize faces and adjust the turret's aim for precise accuracy.</p>
+        <p class="text-left">The Autoturret won the <b>Most Popular Design for Texas Instruments Design Contest for $750.</b>
+        More information can be found <a target="_blank" href="http://stephenarifin.blogspot.com/">here.</a></p>
+      </div>
+    </div>
+  </div><br><br>
+</section>
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>© Copyright Stephen Arifin</p>
 </footer>
+
+<script>
+  $(document).ready(function(){
+    // Add scrollspy to <body>
+    $('body').scrollspy({target: ".navbar", offset: 50});
+
+    // Add smooth scrolling on all links inside the navbar
+    $("#navbar a").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      }  // End if
+    });
+  });
+</script>
