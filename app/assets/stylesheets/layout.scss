@@ -1,0 +1,89 @@
+.jumbotron {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), image-url("header_background_filter_cropped.png") center no-repeat;
+  background-size: cover;
+  padding: 100px 20px;
+  margin-bottom: 0px;
+}
+
+#overview {
+  background-color: $light-blue;
+  padding: 40px;
+}
+
+#overview strong {
+  color: $blue;
+}
+
+#overview .col-sm-4 {
+  padding: 0px 24px;
+}
+
+#overview .col-sm-8 {
+  padding: 24px;
+}
+
+#education {
+  padding: 40px;
+}
+
+#education strong {
+  color: $blue;
+}
+
+#education .col-sm-8 {
+  padding: 24px;
+}
+
+#experience {
+  padding: 40px;
+  background-color: $pale-blue;
+}
+
+#experience h2 {
+  color: $light-blue;
+}
+
+#experience ul {
+  color: $light-blue
+}
+
+#experience .col-sm-8 {
+  padding: 24px;
+}
+
+#experience strong {
+  color: $white;
+}
+
+#skills {
+  padding: 40px;
+  background-color: $light-blue;
+  margin-bottom: 0px;
+}
+
+#skills h2 {
+  font-size: 3.0rem;
+  color: $dark-blue;
+}
+
+#projects {
+  padding: 40px;
+}
+
+#projects strong {
+  color: $blue;
+}
+
+#projects .col-sm-6 p {
+  padding: 8px 24px;
+}
+
+#contact {
+  padding: 40px;
+  background-color: $dark-grey;
+  color: $white;
+}
+
+#contact .row {
+  padding-left: 40px;
+}
