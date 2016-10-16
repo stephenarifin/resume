@@ -1,1 +1,1 @@
-asset 'animate.css', ''
+asset 'animate.css', 'jquery.appear', ''

@@ -29,9 +29,17 @@ $(document).ready(function() {
 
                     $overviewName.removeClass('invisible');
                     $overviewName.addClass('animated fadeInDown');
-                }, 750);
+                }, 1000);
         })
     });
+
+    //$('.slide-in-left-on-appear').appear(function() {
+    //
+    //    window.setTimeout(function() {
+    //        $(this).removeClass('invisible');
+    //        $(this).addClass('animated slideInLeft');
+    //    }, 500)
+    //})
 
     function scrollNavbar($link, event) {
 
@@ -48,12 +56,4 @@ $(document).ready(function() {
             $('html, body').animate({ scrollTop: 0 }, 800);
         }
     };
-
-    function isScrolledIntoView($element) {
-        var elemTop = $element.getBoundingClientRect().top;
-        var elemBottom = $element.getBoundingClientRect().bottom;
-
-        var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-        return isVisible;
-    }
 });
