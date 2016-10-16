@@ -1,0 +1,8 @@
+{
+  "name": "resume",
+  "private": true,
+  "dependencies": {
+    "animate.css",
+    "jquery_appear"
+  }
+}
