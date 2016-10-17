@@ -14,6 +14,7 @@ $(document).ready(function() {
         var $jumbotronSubtitle = $('#jumbotron-subtitle');
         var $overviewName = $('#overview-name');
 
+        $jumbotronTitle.removeClass('invisible');
         $jumbotronTitle.addClass('animated fadeInDown');
 
         $jumbotronTitle.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
