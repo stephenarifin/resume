@@ -2,7 +2,7 @@
   "name": "resume",
   "private": true,
   "dependencies": {
-    "animate.css": "~3.5.2",
-    "jquery_appear": "~0.3.6"
+    "animate.css": "~3.5.2"
+//    "jquery_appear": "~0.3.6"
   }
 }
